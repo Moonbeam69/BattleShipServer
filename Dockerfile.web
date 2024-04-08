@@ -1,0 +1,6 @@
+FROM store/oracle/serverjre:1.8.0_241-b07
+COPY ./target/demo-0.0.4-SNAPSHOT.jar /tmp
+WORKDIR /tmp
+EXPOSE 8081
+CMD java -jar ./demo-0.0.4-SNAPSHOT.jar
+
